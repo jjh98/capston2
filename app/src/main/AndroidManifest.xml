@@ -14,13 +14,14 @@
             android:exported="false" />
         <activity
             android:name=".SubActivity5"
-            android:exported="false" />
-        <activity
-            android:name=".SubAcitivity5"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".SubActivity4"
+            />
         <activity
             android:name=".SubActivity4"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            />
         <activity
             android:name=".SubActivity3"
             android:exported="false" />
@@ -29,9 +30,6 @@
             android:exported="false" />
         <activity
             android:name=".SubActivity1"
-            android:exported="false" />
-        <activity
-            android:name=".SubActivty1"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

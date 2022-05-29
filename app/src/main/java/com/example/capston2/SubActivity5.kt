@@ -14,7 +14,5 @@ class SubActivity5 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        var intent = Intent(this, SubActivity6::class.java)
-        binding.btnStart.setOnClickListener { startActivity(intent) }
     }
 }
