@@ -8,22 +8,131 @@
 
     <Button
         android:id="@+id/btnStart"
-        android:layout_width="wrap_content"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="서브 액티비티 실행2"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="440dp"
+        android:text="보고서탭"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnStart3"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnStart3"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:text="서브 액티비티1"
+        android:layout_marginTop="440dp"
+        android:text="타이머탭"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnStart4"
+        app:layout_constraintStart_toEndOf="@+id/btnStart"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnStart4"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:text="메인탭"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnStart5"
+        app:layout_constraintStart_toEndOf="@+id/btnStart3"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnStart5"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:text="동기부여"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnStart6"
+        app:layout_constraintStart_toEndOf="@+id/btnStart4"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnStart6"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:text="설정탭"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnStart5"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UnknownIdInLayout" />
+
+    <Button
+        android:id="@+id/sub_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="일"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/sub_btn2"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sub_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="주"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/sub_btn3"
+        app:layout_constraintStart_toEndOf="@+id/sub_btn1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sub_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="월"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/sub_btn4"
+        app:layout_constraintStart_toEndOf="@+id/sub_btn2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sub_btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="연"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sub_btn3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sub1_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="하루 사용량"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub_btn2" />
+
+    <TextView
+        android:id="@+id/sub1_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3시간 30분"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub1_text1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
